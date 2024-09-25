@@ -1,0 +1,27 @@
+.accordion-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.accordion-button {
+  background-color: #f8f9fa;
+  color: #253068;
+  font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: #253068;
+}
+
+.accordion-body {
+  background-color: #f8f9fa;
+  font-size: 16px;
+}
+h1{
+  color: #0E88CD;
+  font-family: "Poppins", Sans-serif;
+  text-align: center;
+  margin-bottom: 55px;
+}

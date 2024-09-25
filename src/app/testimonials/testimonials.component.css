@@ -1,0 +1,29 @@
+.testimonials {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.testimonial-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.testimonial-item p {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.testimonial-item span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}

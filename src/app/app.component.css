@@ -1,0 +1,278 @@
+
+nav .container-fluid a img{
+  width: 200px;
+  height: 65px;
+}
+nav li{
+  font-weight: bold;
+  font-family:sans-serif;
+  font-size:medium;
+  color: black;
+}
+.navbar-nav .nav-link:hover {
+  color: green; /* Change text color to green on hover */
+}
+.navbar-nav .nav-item {
+  margin-right: 15px; /* Adjust this value to increase or decrease the gap */
+}
+.navbar-nav .dropdown-menu .dropdown-item{
+  font-weight: bold;
+  font-family:sans-serif;
+  font-size:medium;
+  color: black;
+}
+.navbar-nav .nav-link {
+  transition: color 0.3s ease;
+}
+
+
+/* Ensure higher specificity and !important to override Bootstrap defaults if necessary */
+.left-caption {
+  position: absolute !important; /* Ensure the position is absolute */
+  bottom: 12%;
+  left: 14%;   /* Adjust this value as needed to position the button further left */
+  transform: translateX(0);
+  z-index: 10;
+  text-align: left;  /* Ensure content aligns to the left */
+}
+
+
+/* Marquee Container Styles */
+.marquee-container {
+  width: 100%;             /* Full width */
+  overflow: hidden;        /* Hide overflow content */
+  white-space: nowrap;     /* Prevent text from wrapping */
+  box-sizing: border-box;
+  position: relative;      /* Ensure it appears in normal flow */
+  z-index: 1;              /* Ensure it's above other elements */
+  padding: 5px 0;          /* Add some padding for spacing */
+  background-color:white; /* Optional: Background color */
+}
+
+/* Media query adjustments for smaller devices */
+@media (max-width: 768px) {
+  .marquee-container {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Adjustments for larger screens (above 768px) */
+@media (min-width: 769px) {
+  .marquee-container {
+    font-size: 16px; /* Adjust font size for larger screens */
+  }
+}
+
+/* Marquee Content Animation */
+.marquee-content {
+  display: inline-block;    /* Keep content on a single line */
+  padding-left: 100%;       /* Start outside the visible area */
+  animation: marquee 15s linear infinite; /* Adjust speed */
+}
+
+/* Styling for text inside the marquee */
+.marquee-content p {
+  color: black !important;
+  font-family: sans-serif;
+  font-size: 18px;
+  padding-top: 13px;
+}
+
+.marquee-content a {
+  color: rgb(4, 86, 4);
+  text-decoration: none; /* Remove underline from link */
+}
+
+/* Keyframes for Marquee Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);   /* Start from the right */
+  }
+  100% {
+    transform: translateX(-100%); /* Move to the left */
+  }
+}
+
+
+/* Additional styles for the carousel to stay behind */
+.carousel {
+  position: relative;
+  z-index: 1;              /* Ensure carousel stays behind */
+}
+
+.course-details {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.course-details h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.course-details ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.course-details li {
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+
+@media (max-width: 768px) {
+  .course-details h2 {
+    font-size: 2rem;
+  }
+
+  .course-details li {
+    font-size: 1rem;
+  }
+}
+h1{
+  color: #0E88CD;
+    font-family: "Poppins", Sans-serif;
+    text-align: center;
+    margin-bottom: 55px;
+
+}
+/* Optional: Styling adjustments */
+section p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #253068 !important;
+  font-weight: 400;
+        /* Set font weight */
+
+}
+
+
+
+.embed-responsive {
+  border: 1px solid #ddd; /* Optional: Add a border around the video */
+  border-radius: 5px;     /* Optional: Rounded corners */
+}
+.course-list{
+  color: #0E88CD;
+  font-weight: 600;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for testimonial images */
+/* Ensure card images are displayed properly */
+/* Container for circular images */
+.image-container {
+  width: 150px;            /* Set desired width */
+  height: 150px;           /* Set desired height */
+  border-radius: 50%;      /* Make the container circular */
+  overflow: hidden;        /* Hide any overflow */
+  margin: 0 auto;          /* Center the container */
+  display: flex;           /* Use flexbox for centering */
+  align-items: center;     /* Center vertically */
+  justify-content: center;  /* Center horizontally */
+}
+
+/* Card image styling */
+.card-img-top {
+  width: 100%;            /* Make the image fill the container */
+  height: auto;           /* Maintain aspect ratio */
+  object-fit: cover;      /* Cover the entire container */
+}
+
+/* Additional styling for the card container */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px; /* Add padding to make space around the image */
+  text-align: center; /* Center align text and images within the card */
+}
+
+#testimonial-section {
+  margin-top: 2rem;
+}
+.course-list2{
+  color: #0E88CD;
+  font-family: "poppins",sans-serif;
+  font-size: 46px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+
+}
+.image-box {
+  width: 100%;               /* Full width of the column */
+  height: 350px;             /* Set height to match the previous iframe height */
+  overflow: hidden;          /* Hide any overflow */
+  display: flex;             /* Use flexbox for centering */
+  align-items: center;       /* Center vertically */
+  justify-content: center;    /* Center horizontally */
+}
+
+.image-container img {
+  width: 100%;              /* Make the image fill the container */
+  height: auto;             /* Maintain aspect ratio */
+  object-fit: cover;        /* Cover the entire container */
+}
+
+/* Custom Modal Styling */
+.modal-content {
+  border-radius: 10px;
+}
+.modal-header {
+  background-color: #253068;
+  color: #fff;
+}
+.btn-success {
+  background-color: #28a745;
+}
+
+/* Animation and Hover Effects */
+
+
+.animated-text {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.card-hover {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-hover:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.animated-btn {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+
+
+
+
+
+
+
